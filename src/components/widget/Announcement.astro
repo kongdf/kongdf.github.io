@@ -1,0 +1,67 @@
+---
+import { Icon } from "astro-icon/components";
+import { announcementConfig } from "../../config";
+import I18nKey from "../../i18n/i18nKey";
+import { i18n } from "../../i18n/translation";
+import WidgetLayout from "./WidgetLayout.astro";
+
+const config = announcementConfig;
+
+interface Props {
+	class?: string;
+	style?: string;
+}
+const className = Astro.props.class;
+const style = Astro.props.style;
+---
+
+<!-- 组件显示现在由sidebarLayoutConfig统一控制，无需检查config.enable -->
+<WidgetLayout 
+    name={config.title || i18n(I18nKey.announcement)} 
+    id="announcement"
+    class={className} 
+    style={style}
+>
+  <div class="flex gap-2 flex-wrap">
+    <div class="px-4">
+      <div class="text-left text-neutral-400 mb-2.5 transition">
+        <p>微信号：kdf092</p>
+
+        <p>公众号：我做个艺术家</p>
+        <p>小程序：我做个艺术家</p>
+        <p>
+          工具箱：<a
+            href="https://box.kongdf.com/"
+            class="text-[var(--primary)]"
+            target="_blank"
+            rel="noopener noreferrer">box.kongdf.com</a
+          >
+        </p>
+      </div>
+    </div>
+  </div>
+</WidgetLayout>
+
+<script>
+    function closeAnnouncement() {
+        // 通过data-id属性找到整个widget-layout元素
+        const widgetLayout = document.querySelector('widget-layout[data-id="announcement"]') as HTMLElement;
+        if (widgetLayout) {
+            // 隐藏整个widget-layout元素
+            widgetLayout.style.display = 'none';
+            // 保存关闭状态到localStorage
+            localStorage.setItem('announcementClosed', 'true');
+        }
+    }
+
+    // 页面加载时检查是否已关闭
+    document.addEventListener('DOMContentLoaded', function() {
+        const widgetLayout = document.querySelector('widget-layout[data-id="announcement"]') as HTMLElement;
+        if (widgetLayout && localStorage.getItem('announcementClosed') === 'true') {
+            widgetLayout.style.display = 'none';
+        }
+    });
+
+    // 使公告栏函数全局可用
+    window.closeAnnouncement = closeAnnouncement;
+</script>

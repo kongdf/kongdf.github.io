@@ -1,0 +1,27 @@
+---
+
+import { getEntry, render } from "astro:content";
+import Markdown from "@components/misc/Markdown.astro";
+import I18nKey from "../i18n/i18nKey";
+import { i18n } from "../i18n/translation";
+import MainGridLayout from "../layouts/MainGridLayout.astro";
+import SwitchGame from "@components/game/switch.svelte";
+ 
+const title = "我的游戏";
+---
+<MainGridLayout title={title}>
+	<!-- 引入右侧边栏布局管理器 -->
+  <script>
+    import('../scripts/right-sidebar-layout.js');
+  </script>
+    <div class="flex w-full rounded-[var(--radius-large)] overflow-hidden relative min-h-32">
+        <div class="card-base z-10 px-9 py-6 relative w-full">
+            <h3 class="text-4xl font-bold text-black/90 dark:text-white/90  relative
+                          before:w-1 before:h-8 before:rounded-md before:bg-[var(--primary)]
+                          before:absolute before:top-1/2 before:-translate-y-1/2 before:-left-4">
+                    Switch
+                </h3>
+          <SwitchGame client:only="svelte"></SwitchGame>
+        </div>
+    </div>
+</MainGridLayout>
