@@ -256,7 +256,7 @@ export async function getChannelInfo(
 
   const url = id
     ? `https://${host}/${channel}/${id}?embed=1&mode=tme`
-    : `https://${host}/s/${channel}`
+    : `https://t.me/s/kongdf`
   const headers = Object.fromEntries(Astro.request.headers)
 
   Object.keys(headers).forEach(key => {
