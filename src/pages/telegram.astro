@@ -7,13 +7,9 @@ import Item from '@components/telegram/item.astro'
 import I18nKey from '../i18n/i18nKey'
 import { i18n } from '../i18n/translation'
 const aboutPost = await getEntry('spec', 'telegram')
-
 const { Content } = await aboutPost.render()
-
 import { getChannelInfo } from '../telegram/index'
-
 const channel = await getChannelInfo(Astro)
-console.log(channel)
 ---
 <MainGridLayout title={i18n(I18nKey.telegram)} description={i18n(I18nKey.telegramm)}>
     <div class="  w-full rounded-[var(--radius-large)] overflow-hidden relative min-h-32 ">

@@ -52,10 +52,10 @@ function getImages($, item, { staticProxy, id, index, title }) {
       const popoverId = `modal-${id}-${_index}`
       return `
       <button class="image-preview-button image-preview-wrap" popovertarget="${popoverId}" popovertargetaction="show">
-        <img src="${staticProxy + url}" alt="${title}" loading="${index > 15 ? 'eager' : 'lazy'}" />
+        <img src="${staticProxy + url}" style="max-height:300px" alt="${title}" loading="${index > 15 ? 'eager' : 'lazy'}" />
       </button>
       <button class="image-preview-button modal" id="${popoverId}" popovertarget="${popoverId}" popovertargetaction="hide" popover>
-        <img class="modal-img" src="${staticProxy + url}" alt="${title}" loading="lazy" />
+        <img class="modal-img" src="${staticProxy + url}" style="max-height:300px" alt="${title}" loading="lazy" />
       </button>
     `
     })
@@ -267,7 +267,7 @@ export async function getChannelInfo(
 
   console.info('Fetching', url, { before, after, q, type, id })
 
-  // const proxyAgent = new ProxyAgent('http://127.0.0.1:10808')
+  const proxyAgent = new ProxyAgent('http://127.0.0.1:10808')
   const html = await $fetch(url, {
     // dispatcher: proxyAgent,
     headers,
