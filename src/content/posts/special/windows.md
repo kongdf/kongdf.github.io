@@ -46,7 +46,7 @@ draft: false
 
 #### 驱动精灵不限速
 
-* 蓝奏云：<https://kongdf.lanzoul.com/iI9yL0tvruad>
+* 蓝奏云：<https://kongdf.lanzoul.com/iKryG0spdauh>
 
 ### 激活工具
 
