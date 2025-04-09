@@ -1,15 +1,8 @@
 ---
 
-import MainGridLayout from '../layouts/MainGridLayout.astro'
-
-import { getEntry } from 'astro:content'
+import MainGridLayout from '../layouts/MainGridLayout.astro' 
 import { i18n } from '../i18n/translation'
-import I18nKey from '../i18n/i18nKey'
-import Markdown from '@components/misc/Markdown.astro'
-
-const aboutPost = await getEntry('spec', 'telegram')
-
-const { Content } = await aboutPost.render()
+import I18nKey from '../i18n/i18nKey' 
 ---
 <MainGridLayout title={i18n(I18nKey.telegram)} description={i18n(I18nKey.telegram)}>
     <iframe width="100%" style="height: 70vh;border-radius: 10px;" src="//blogvercel.kongdf.com/"  allowfullscreen="true"> </iframe>
