@@ -78,18 +78,21 @@ export const profileConfig: ProfileConfig = {
       name: 'GitHub',
       icon: 'fa6-brands:github',
       url: 'https://github.com/kongdf',
-    },
-    {
+    }, {
+      name: 'telegram',
+      icon: 'fa6-brands:telegram',
+      url: 'https://t.me/kdf092',
+    }, {
       name: 'RSS',
       icon: 'material-symbols:rss-feed-rounded',
       url: '/rss.xml',
     }
+    // {
+    //   name: 'weixin',
+    //   icon: 'fa6-brands:weixin',
+    //   url: 'weixin://contacts/profile/kdf092',
+    // }, 
 
-    // , {
-    //   name: '技术博客',
-    //   icon: 'logos:blogger',
-    //   url: 'https://blog.kongdf.com',
-    // }
 
     // Visit https://icones.js.org/ for icon codes
     // You will need to install the corresponding icon set if it's not already included

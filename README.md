@@ -1,6 +1,6 @@
 # blog.astro
 
-在线预览:[https://blog.kongdf.com](https://blog.kongdf.com)
+在线预览:[https://kongdf.com](https://kongdf.com)
 
 基于 [Astro](https://astro.build) + 主题[Fuwari](https://github.com/saicaca/fuwari)。
 

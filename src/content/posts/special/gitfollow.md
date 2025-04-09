@@ -1,7 +1,7 @@
 ---
 title: github有趣的项目
 description:  github关注清单
-image: https://s21.ax1x.com/2025/03/28/pErV57j.png
+image: https://img0.baidu.com/it/u=4240679127,2875719622&fm=253&fmt=auto&app=138&f=JPEG?w=853&h=363
 published: 2025-04-02
 tags: [Git]
 category: 学习笔记
