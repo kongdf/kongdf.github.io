@@ -51,6 +51,11 @@ export const navBarConfig: NavBarConfig = {
       external: false,                               // Show an external link icon and will open in a new tab
     },
     LinkPreset.Telegram,
+    {
+      name: '作品',
+      url: '/creation/',     // Internal links should not include the base path, as it is automatically added
+      external: false,                               // Show an external link icon and will open in a new tab
+    },
     LinkPreset.About,
 
     // LinkPreset.Archive,
