@@ -79,6 +79,7 @@ export const profileConfig: ProfileConfig = {
   name: '孔大夫',
   bio: '热爱互联网的一切.',
   links: [
+
     {
       name: 'GitHub',
       icon: 'fa6-brands:github',
@@ -87,18 +88,25 @@ export const profileConfig: ProfileConfig = {
       name: 'telegram',
       icon: 'fa6-brands:telegram',
       url: 'https://t.me/kdf092',
-    }, {
+    },
+
+    {
+      name: '抖音',
+      icon: 'fa6-brands:tiktok',
+      url: 'https://www.douyin.com/user/MS4wLjABAAAAb2HrI9R1_C98Q1sjBteEYGGjBeFzeRCty6rEq9t-D86r3eb_f1HBEhXqsmDBRyYh?from_tab_name=main',
+    },
+    {
       name: 'RSS',
       icon: 'material-symbols:rss-feed-rounded',
       url: '/rss.xml',
-    }
+    },
+
+
     // {
     //   name: 'weixin',
     //   icon: 'fa6-brands:weixin',
     //   url: 'weixin://contacts/profile/kdf092',
-    // }, 
-
-
+    // },
     // Visit https://icones.js.org/ for icon codes
     // You will need to install the corresponding icon set if it's not already included
     // `pnpm add @iconify-json/<icon-set-name>`

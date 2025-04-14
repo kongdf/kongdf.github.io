@@ -4,7 +4,7 @@ import Categories from './Categories.astro'
 import Profile from './Profile.astro'
 import TOC from './TOC.astro'
 import Tag from './Tags.astro'
-
+import ShowMe from './ShowMe.astro'
 interface Props {
   class?: string
   headings?: MarkdownHeading[]
@@ -16,6 +16,7 @@ const headings = Astro.props.headings
 <div id="sidebar" class:list={[className, "w-full"]}>
     <div class="flex flex-col w-full gap-4 mb-4">
         <Profile></Profile>
+        <ShowMe></ShowMe>
     </div>
     <div id="sidebar-sticky" class="transition-all duration-700 flex flex-col w-full gap-4 top-4 sticky top-4">
         <Categories class="onload-animation" style="animation-delay: 150ms"></Categories>
