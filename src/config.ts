@@ -41,6 +41,11 @@ export const navBarConfig: NavBarConfig = {
   links: [
     // LinkPreset.Home,
     {
+      name: '生活漫游指南',
+      url: '/archive/category/生活漫游指南/',     // Internal links should not include the base path, as it is automatically added
+      external: false,                               // Show an external link icon and will open in a new tab
+    },
+    {
       name: '玩机指北',
       url: '/archive/category/玩机指北/',     // Internal links should not include the base path, as it is automatically added
       external: false,                               // Show an external link icon and will open in a new tab
@@ -56,6 +61,7 @@ export const navBarConfig: NavBarConfig = {
       url: '/creation/',     // Internal links should not include the base path, as it is automatically added
       external: false,                               // Show an external link icon and will open in a new tab
     },
+
     LinkPreset.About,
 
     // LinkPreset.Archive,
