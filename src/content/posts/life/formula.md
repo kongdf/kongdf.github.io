@@ -1,5 +1,5 @@
 ---
-title: 食为天
+title: 美食收藏夹
 description: 待实验
 # image: https://s21.ax1x.com/2025/04/01/pEyMzLt.png
 published: 2025-04-21
