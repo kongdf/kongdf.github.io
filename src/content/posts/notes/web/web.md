@@ -361,3 +361,48 @@ export function AudioPlaySubscribeSet(type, data = null) {
 }
 
 ```
+
+
+### requestIdleCallback 
+requestIdleCallback 是 浏览器提供的 API，用于在 浏览器空闲时执行低优先级任务，不会阻塞主线程，也不会影响动画和用户交互。
+```js
+
+// 简单的单次执行
+function simpleSingleIdleTask(deadline) {
+    console.log('简单的执行一次');
+}
+
+requestIdleCallback(simpleSingleIdleTask);
+
+// 结合条件判断执行一次
+let hasExecuted = false;
+
+function conditionalSingleIdleTask(deadline) {
+    if (!hasExecuted) {
+        console.log('结合条件判断执行一次');
+        hasExecuted = true;
+    }
+}
+
+requestIdleCallback(conditionalSingleIdleTask);
+
+// 带超时的单次执行
+let hasExecutedTimed = false;
+
+function timedSingleIdleTask(deadline) {
+    if (deadline.didTimeout || (!hasExecutedTimed && deadline.timeRemaining() > 0)) {
+        console.log('带超时的单次执行');
+        hasExecutedTimed = true;
+    }
+}
+
+requestIdleCallback(timedSingleIdleTask, { timeout: 5000 });
+
+
+
+// 取消回调
+cancelIdleCallback(callbackId);
+```
+
+### IntersectionObserver
+IntersectionObserver 是浏览器提供的一个 API，用于异步观察一个元素（target element）与其祖先元素或顶级文档视口（viewport）之间的交集变化。简单来说，它可以监听某个元素是否进入或离开视口，以及可见部分的比例。
