@@ -35,6 +35,7 @@ top: false
  
 ## 订阅地址
 
+### <https://love.p6m6.com/>
 ### <https://nodefree.org/>
 
 ### v2ray

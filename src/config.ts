@@ -24,13 +24,10 @@ const SITE_TIMEZONE = 8; //设置你的网站时区 from -12 to 12 default in UT
 export const siteConfig: SiteConfig = {
 	title: "孔大夫",
 	subtitle: "博客",
-	siteURL: "https://kongdf.com/", // 请替换为你的站点URL，以斜杠结尾
+	siteURL: "https://kongdf.github.io/", // 请替换为你的站点URL，以斜杠结尾
 	siteStartDate: "2025-01-01", // 站点开始运行日期，用于站点统计组件计算运行天数
-
 	timeZone: SITE_TIMEZONE,
-
 	lang: SITE_LANG,
-
 	themeColor: {
 		hue: 250, // 主题色的默认色相，范围从 0 到 360。例如：红色：0，青色：200，蓝绿色：250，粉色：345
 		fixed: false, // 对访问者隐藏主题色选择器
