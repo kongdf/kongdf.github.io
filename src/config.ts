@@ -210,11 +210,11 @@ export const siteConfig: SiteConfig = {
 export const fullscreenWallpaperConfig: FullscreenWallpaperConfig = {
 	src: {
 		desktop: [
-			"/assets/desktop-banner/1.webp",
+			// "/assets/desktop-banner/1.webp",
 
 		], // 桌面横幅图片
 		mobile: [
-			"/assets/mobile-banner/1.webp",
+			// "/assets/mobile-banner/1.webp",
 
 		], // 移动横幅图片
 	}, // 使用本地横幅图片
