@@ -27,9 +27,9 @@ export const projectsData: Project[] = [
 		category: "web",
 		techStack: ["Astro", "TypeScript", "Tailwind CSS", "Svelte"],
 		status: "in-progress",
-		liveDemo: "https://kongdf.com",
-		// sourceCode: "https://github.com/example/mizuki", // 更改为GitHub链接
-		visitUrl: "https://kongdf.com", // 添加前往项目链接
+		liveDemo: "https://kongdf.github.io/",
+		sourceCode: "https://github.com/kongdf/kongdf.github.io", // 更改为GitHub链接
+		visitUrl: "https://kongdf.github.io/", // 添加前往项目链接
 		startDate: "2026-01-24",
 		endDate: "持续更新",
 		featured: true,
@@ -56,7 +56,7 @@ export const projectsData: Project[] = [
 		description: "京东黄金积存金价格展示浮窗，告别手机盯盘",
 		image: "",
 		category: "desktop",
-		techStack: ["React Native", "TypeScript", "Redux", "Firebase"],
+		techStack: ["Rust", "Tauri"],
 		sourceCode: "https://github.com/kongdf/JDfund",
 		status: "completed",
 		startDate: "2024-03-01",

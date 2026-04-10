@@ -44,13 +44,7 @@ export const devicesData: DeviceCategory = {
 			specs: "iOS:16.7.2",
 			description: "iOS测试机",
 			link: "https://www.apple.com.cn/iphone/",
-		}, {
-			name: "红米Note 11",
-			image: "https://2b.zol-img.com.cn/product/221_1200x900/861/ceuUE41ZIfFeo.jpg",
-			specs: "iOS:16.7.2",
-			description: "Android测试机",
-			link: "https://www.oneplus.com/cn/13t",
-		},
+		}
 	],
 	相机: [
 		{
